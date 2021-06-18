@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{$title}{$pool_name}</title>
+	<meta name="description" content="{$description}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico in the root directory -->
+	<!-- all css here -->
+	<!-- bootstrap v3.3.6 css -->
+	<!-- <link rel="stylesheet" href="{$theme_path}css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="{$theme_path}css/bootstrap-v5.0.0beta3.min.css">
+	<!-- font-awesome css -->
+	<link rel="stylesheet" type="text/css" href="{$theme_path}css/font-awesome-4.7.0.min.css">
+	<script>
+		var symbol = '{$symbol}';
+		var theme_path = '{$theme_path}';
+		var ajax_url = '{$ajax_url}';
+		var pool_url_tx = '{$pool_url_tx}';
+		var explorer_url_blockhash = '{$explorer_url_blockhash}';
+		var explore_url_tx = '{$explorer_url_tx}';
+		// $(document).ready(function ($) {
+		// });
+	</script>
+	<!-- all js here -->
+	<!-- jquery latest version -->
+	<script src="{$theme_path}js/vendor/jquery-3.2.1.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="{$theme_path}js/bootstrap.min.js"></script>
+	<script src="{$theme_path}js/bootstrap.bundle.min.js"></script>
+	<!-- jquery-ui js -->
+	<script src="{$theme_path}js/jquery-ui-v1.11.4.min.js"></script>
+	<!-- Stats-Number-Scroller-Animation-JavaScript -->
+	<!-- <script src="{$theme_path}js/jquery-2.1.4.min.js"></script> -->
+	<script src="{$theme_path}js/jquery.waypoints-4.0.1.min.js"></script>
+	<script src="{$theme_path}js/jquery.countup-1.0.3.min.js"></script>
+
+	<!-- main js -->
+	<script src="{$theme_path}js/main.min.js?20210604"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="{$homepage}">
+				<img src="{$theme_path}img/logo/logo-209x64-white-border.png" alt="{$name} logo" width="104"
+					height="32">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link" href="{$homepage}">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="{$community_url}">Community</a></li>
+					<li class="nav-item"><a class="nav-link" href="{$explorer_url}">Explorer</a></li>
+					<li class="nav-item"><a class="nav-link" href="{$pool_url}">Pool</a></li>
+					<li class="nav-item"><a class="nav-link" href="{$root_path}{$pool_path}getting-started">
+							Getting Started</a></li>
+					<li class="nav-item"><a class="nav-link" href="{$root_path}{$pool_path}mining-software">
+							Mining Software</a></li>
+					<li class="nav-item"><a class="nav-link" href="{$root_path}{$pool_path}faq">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link" href="{$root_path}{$pool_path}terms-of-service">
+							Terms of Service</a></li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" id="input_search_block" size="30"
+						placeholder="enter the block height/hash or txid" aria-label="Search">
+					<button class="btn btn-outline-success" type="button" onclick="search_block('{$search_url}')">
+						<i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+	</nav>

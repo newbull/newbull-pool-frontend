@@ -1,0 +1,279 @@
+﻿<div class="wd_scroll_wrap">
+	<section class="currency-area jarallax bg-img mt-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p class="text-muted text-center" id="rpcstatus"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<table class="table">
+						<thead>
+							<tr class="">
+								<th class="text-start" colspan="2">Network Info (<span id="chain" class="text-warning">
+										<!-- <div class="d-flex justify-content-center"> -->
+										<div class="spinner-grow spinner-grow-sm" role="status">
+											<span class="visually-hidden">Loading...</span>
+										</div>
+										<!-- </div> -->
+									</span>)
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="text-start">Currency</th>
+								<td class="text-end">
+									<a class="text-info" href="{$homepage}">
+										{$currency} ({$symbol}) ({$algorithm})
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th class="text-start">Hashrate</th>
+								<td class="text-end" id="hashrate">
+									<!-- <div class="d-flex justify-content-center"> -->
+									<div class="spinner-grow spinner-grow-sm" role="status">
+										<span class="visually-hidden">Loading...</span>
+									</div>
+									<!-- </div> -->
+								</td>
+							</tr>
+							<tr>
+								<th class="text-start">Difficulty</th>
+								<td class="text-end" id="difficulty">
+									<!-- <div class="d-flex justify-content-center"> -->
+									<div class="spinner-grow spinner-grow-sm" role="status">
+										<span class="visually-hidden">Loading...</span>
+									</div>
+									<!-- </div> -->
+								</td>
+							</tr>
+							<tr>
+								<th class="text-start">Version</th>
+								<td class="text-end" id="version">
+									<!-- <div class="d-flex justify-content-center"> -->
+									<div class="spinner-grow spinner-grow-sm" role="status">
+										<span class="visually-hidden">Loading...</span>
+									</div>
+									<!-- </div> -->
+								</td>
+							</tr>
+							<tr>
+								<th class="text-start">Healthy</th>
+								<td class="text-end">
+									<span id="healthy">
+										<!-- <div class="d-flex justify-content-center"> -->
+										<div class="spinner-grow spinner-grow-sm" role="status">
+											<span class="visually-hidden">Loading...</span>
+										</div>
+										<!-- </div> -->
+									</span>
+									{$energy_saving_mode}
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<table class="table">
+						<thead>
+							<tr class="">
+								<th class="text-start" colspan="2">Pool Info (<span class="text-warning">
+										Donate 40% to NewBull Foundation
+									</span>)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="text-start">Fees</th>
+								<td class="text-end text-warning">
+									10%
+								</td>
+							</tr>
+							<tr>
+								<th class="text-start">Hashrate</th>
+								<td class="text-end">{$hashrate}</td>
+							</tr>
+							<tr>
+								<th class="text-start">Workers</th>
+								<td class="text-end">{$works}</td>
+							</tr>
+							<tr>
+								<th class="text-start">Last Block</th>
+								<td class="text-end">{$lastblock}</td>
+							</tr>
+							<tr>
+								<th class="text-start">Last Payment</th>
+								<td class="text-end">{$lastpayment}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<table class="table">
+						<thead>
+							<tr class="">
+								<th class="text-start" colspan="2">Block Stats</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="text-start">Total</th>
+								<td class="text-end">{$total}</td>
+							</tr>
+							<tr>
+								<th class="text-start">Confirmed</th>
+								<td class="text-end">{$confirmed}</td>
+							</tr>
+							<tr>
+								<th class="text-start">Orphaned</th>
+								<td class="text-end">{$orphaned}</td>
+							</tr>
+							<tr>
+								<th class="text-start">Pending</th>
+								<td class="text-end">{$pending}</td>
+							</tr>
+							<tr>
+								<th class="text-start">Paid</th>
+								<td class="text-end">{$paid}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-area bg-img jarallax pt-4">
+		<div class="container pt-4">
+			<div class="row pt-4">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+					<div class="about-content">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th class="" colspan="4">Latest Mined Blocks</th>
+									</tr>
+									<tr>
+										<th>Height</th>
+										<th>Status</th>
+										<th>Time (UTC)</th>
+										<th>Amount</th>
+									</tr>
+								</thead>
+								<tbody>
+									{$mined_block_list_tbody}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+					<div class="about-content">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th class="" colspan="4">Latest Payment</th>
+									</tr>
+									<tr>
+										<th>Height</th>
+										<th>Status</th>
+										<th>Time (UTC)</th>
+										<th>Reward</th>
+									</tr>
+								</thead>
+								<tbody>
+									{$paid_block_list_tbody}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-area bg-img jarallax pt-4" id="memory_pool_section" {$memory_pool_list_tbody_display}>
+		<div class="container pt-4">
+			<div class="row pt-4">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+					<div class="about-content">
+						<h2 class="wow fadeIn animated" data-wow-duration="1.0s"
+							style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+							Memory Pool</h2>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th class="text-start w-50">Transaction ID</th>
+										<th class="text-start" style="width: 20%;">Amount</th>
+										<th class="text-start">Send To</th>
+									</tr>
+								</thead>
+								<tbody id="memory_pool_list_tbody">
+									<tr>
+										<td colspan="3">
+											<div class="d-flex justify-content-center">
+												<div class="spinner-grow spinner-grow-sm" role="status">
+													<span class="visually-hidden">Loading...</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class="wd_scroll_wrap" id="nextdiff_section" {$nextdiff_display}>
+	<section class="about-area jarallax bg-img pt-4">
+		<div class="container pt-4">
+			<div class="row pt-4">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+					<div class="about-content">
+						<h2 class="wow fadeIn animated" data-wow-duration="1.0s"
+							style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+							Next adjustment of the difficulty & Time remaining</h2>
+						<button class="btn btn-primary">
+							<span class="counter" data-slno='1' data-min='0' data-max='' data-delay='5'
+								data-increment='4' id="nextdiff">
+								<div class="d-flex justify-content-center">
+									<div class="spinner-grow spinner-grow-sm" role="status">
+										<span class="visually-hidden">Loading...</span>
+									</div>
+								</div>
+							</span>
+						</button>
+						<div class="btc_timer_section_wrapper pt-4">
+							<div id="clockdiv">
+								<div>
+									<span class="days"></span>
+									<div class="smalltext">Days</div>
+								</div>&nbsp;
+								<div>
+									<span class="hours"></span>
+									<div class="smalltext">Hours</div>
+								</div>&nbsp;
+								<div>
+									<span class="minutes"></span>
+									<div class="smalltext">Minutes</div>
+								</div>&nbsp;
+								<div>
+									<span class="seconds"></span>
+									<div class="smalltext">Seconds</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
