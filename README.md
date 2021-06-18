@@ -1,6 +1,6 @@
 # NewBull Pool Frontend
 
-`NewBull Pool Frontend`(https://github.com/newbull/CoiniumServ) v1.x is a simple and lightweight pool frontend written in PHP with `easybitcoin.php` ([get it here](https://github.com/aceat64/EasyBitcoin-PHP)) and `CoiniumServ` ([get it here](https://github.com/bonesoul/CoiniumServ)).
+`NewBull Pool Frontend`(https://github.com/newbull/newbull-pool-frontend) v1.x is a simple and lightweight pool frontend written in PHP with `easybitcoin.php` ([get it here](https://github.com/aceat64/EasyBitcoin-PHP)) and `CoiniumServ` ([get it here](https://github.com/bonesoul/CoiniumServ)).
 
 NewBull Pool Frontend work with NewBull fine. It's should work with others pow block chain, such as Bitcoin.
 
